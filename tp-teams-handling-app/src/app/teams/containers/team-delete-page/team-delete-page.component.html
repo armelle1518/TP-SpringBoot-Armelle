@@ -1,0 +1,15 @@
+<mat-card>
+  <div class="" *ngIf="team">
+    <span>Name : {{team.name}}</span>
+  </div>
+</mat-card>
+<mat-card>
+  <div class="" *ngIf="team">
+    <span> slogan : {{team.slogan}}</span>
+  </div>
+</mat-card>
+
+<mat-card class=team-card-box>
+  <button mat-raised-button color="primary" (click)="back()">Cancel </button>
+  <button mat-raised-button color="accent" (click)="deleteTeam()">Delete </button>
+</mat-card>

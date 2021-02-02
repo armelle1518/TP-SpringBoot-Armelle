@@ -1,0 +1,20 @@
+<mat-card class=team-card-box *ngFor="let team of teams;" (click)="onSelectTeam(team)">
+
+  <button mat-raised-button color="primary">
+    {{ team.name }}
+  </button>
+
+  <div class=team-button>
+  <button  mat-raised-button color="primary" (click)="update(team)">
+    Edit
+  </button>
+  <button mat-raised-button color="accent" (click)="delete(team)">
+    Delete
+  </button>
+  </div>
+
+</mat-card>
+
+<mat-card>
+  <button mat-raised-button color="accent" (click)="add()"> Add a team</button>
+</mat-card>
